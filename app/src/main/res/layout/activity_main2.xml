@@ -5,42 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-
+    android:background="#FFFFFF"
 
     >
 
 
 
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#C0C0C0"
-        android:gravity="right"
-        android:layout_weight="1"
-        >
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:src="@drawable/github"
-            android:background="#C0C0C0"
-          android:id="@+id/account"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/account_infor"
-            android:text="请登录/注册"
-            android:textColor="#0000FF"
-            android:textSize="35px"
-            android:paddingLeft="30px"
-            android:paddingTop="20px"
-
-
-            />
-    </LinearLayout>
 
 
 
@@ -48,7 +20,7 @@
         android:id="@+id/right_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="50"
+        android:layout_weight="55"
         >
 
     </FrameLayout>

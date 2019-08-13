@@ -43,6 +43,14 @@ public class InitDB {
         computer.save();
         System.out.println(success1);
 
+
+        Major computer1 = new Major();
+        computer1.setMajor_code("081204");
+        computer1.setMajor_name("软件工程");
+        boolean success2 = computer1.setMajor_from_apartment("智能制造学部");
+        computer1.save();
+        System.out.println(success2);
+
         /*
             创建考生张三信息
          */
@@ -69,6 +77,7 @@ public class InitDB {
          */
         User admin = new User();
         admin.setUser_name("admin");
+        admin.setUser_name1("admin");
         admin.setUser_pwd("admin");
         admin.setUser_phone("01234567890");
         admin.setUser_apart_code("1134901");
@@ -76,6 +85,33 @@ public class InitDB {
         admin.setUser_apartment("智能制造学部");
         admin.setUser_isadmin(true);
         admin.save();
+
+        /*
+        创建管理员
+         */
+        User user=new User();
+        user.setUser_name("3116003642");
+        user.setUser_name1("杨毅华");
+        user.setUser_pwd("19970930");
+        user.setUser_phone("13534846119");
+        user.setUser_apart_code("1134901");
+        user.setUser_organ("五邑大学");
+        user.setUser_apartment("智能制造学部");
+        user.setUser_isadmin(true);
+        user.setUser_verify_id("yyh");
+        user.save();
+
+        /*
+        创建笔录类型
+         */
+        RecordType recordType=new RecordType();
+        recordType.setRecord_type_name("研究生复试");
+        recordType.save();
+
+        RecordType recordType1=new RecordType();
+        recordType1.setRecord_type_name("普通采访");
+        recordType1.save();
+
     }
 
 

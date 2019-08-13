@@ -16,7 +16,7 @@ public class RecordSet extends LitePalSupport {
     @Column(nullable = false)
     private String Record_t_name; // 笔录类型(外键)
     @Column(nullable = false)
-    private Date Record_date; // 笔录日期(默认为当前日期)
+    private String Record_date; // 笔录日期(默认为当前日期)
     @Column(nullable = false)
     private String Record_organ; // 笔录组织机构(外键)
     @Column(nullable = false)
@@ -63,11 +63,11 @@ public class RecordSet extends LitePalSupport {
         return success;
     }
 
-    public Date getRecord_date() {
+    public String getRecord_date() {
         return Record_date;
     }
 
-    public void setRecord_date(Date record_date) {
+    public void setRecord_date(String record_date) {
         Record_date = record_date;
     }
 

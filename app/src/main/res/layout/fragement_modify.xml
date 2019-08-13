@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    android:background="#FFFFFF"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="#FFFFFF"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:background="@drawable/border"
+            >
+
+            <TextView
+                android:id="@+id/itv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="访谈名称"
+                android:textSize="25sp"
+                android:layout_marginTop="8dp"
+             ></TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF5EE"
+                android:layout_marginTop="8dp"
+            ></Spinner>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFF5EE"></Spinner>
+            </LinearLayout>
+            <Button
+                android:id="@+id/read"
+                android:layout_width="122dp"
+                android:layout_height="51dp"
+                android:text="读取"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                >
+
+
+
+            <Button
+                android:id="@+id/savefile"
+                android:layout_width="122dp"
+                android:layout_height="51dp"
+                android:text="保存"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+
+                />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/border"
+    >
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="20dp"
+            android:scrollbarTrackVertical="@android:color/white"
+            android:scrollbarStyle="insideOverlay"
+          >
+            <EditText
+                android:id="@+id/contrast_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="content"
+                android:textSize="25sp"
+                android:singleLine="false"
+                />
+        </ScrollView>
+</LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+

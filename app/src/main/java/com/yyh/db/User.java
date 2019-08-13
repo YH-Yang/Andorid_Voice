@@ -9,7 +9,10 @@ import java.util.List;
 public class User extends LitePalSupport {
 
     @Column(unique = true, defaultValue = "unknown", nullable = false)
-    private String User_name; // 用户名称（主键）
+    private String User_name; // 用户ID（主键）
+
+    @Column(nullable = false)
+    private String User_name1;//用户姓名
 
     @Column(nullable = false)
     private String User_pwd; // 用户密码
@@ -19,7 +22,6 @@ public class User extends LitePalSupport {
 
     private String User_ident_code; // 验证码
     private String User_email; // 用户邮箱
-
     @Column(nullable = false)
     private String User_apart_code; // 部门编码（外键）TODO:只记录不显示(没有返回？)
 
@@ -28,8 +30,20 @@ public class User extends LitePalSupport {
 
     @Column(nullable = false)
     private String User_apartment; // 用户所属部门
+
     @Column(nullable = false)
     private boolean User_isadmin; // 用户是否为管理员（第一个注册者为管理员）
+
+    @Column(nullable = true)
+    private String User_verify_id;//用户用于识别用户的声纹ID
+
+    public String getUser_name1(){
+        return  User_name1;
+    }
+
+    public String getUser_verify_id(){
+        return User_verify_id;
+    }
 
     public String getUser_name() {
         return User_name;
@@ -75,6 +89,7 @@ public class User extends LitePalSupport {
         return User_apart_code;
     }
 
+
     /*
         (外键) 根据外键数据库中是否有一样部门编号判断能否设置
         设置成功返回true
@@ -115,4 +130,8 @@ public class User extends LitePalSupport {
     public void setUser_isadmin(boolean user_isadmin) {
         User_isadmin = user_isadmin;
     }
+
+    public void setUser_verify_id(String user_verify_id){User_verify_id=user_verify_id;}
+
+    public void setUser_name1(String user_name1){User_name1=user_name1;}
 }

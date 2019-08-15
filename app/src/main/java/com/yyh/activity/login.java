@@ -122,13 +122,13 @@ private  SharedPreferences.Editor editor;
             }
         });
         //找回密码
-        Button forget =(Button) findViewById(R.id.login_error);
-        forget.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        Button forget =(Button) findViewById(R.id.login_error);
+//        forget.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
         //看密码
         Button check=(Button) findViewById(R.id.check);
         check.setOnClickListener(new View.OnClickListener() {

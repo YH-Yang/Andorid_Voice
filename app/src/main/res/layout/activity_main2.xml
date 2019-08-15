@@ -27,104 +27,70 @@
 
 
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <RadioGroup
+        android:id="@+id/bottom_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        >
-
-        <Button
-            android:id="@+id/set"
-
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/navigation_set"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
+            android:layout_height="wrap_content"
             android:text="笔录设置"
-
-            android:textSize="30px" />
-        <Button
-            android:layout_marginLeft="5px"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
+            android:drawableTop="@drawable/setting"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+        <RadioButton
+            android:id="@+id/navigation_record"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:id="@+id/record"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:text="笔录采录"
-
-            android:textSize="30px"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_marginLeft="5px"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
+            android:drawableTop="@drawable/record"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+        <RadioButton
+            android:id="@+id/navigation_proofread"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:id="@+id/Proofread"
-            android:layout_gravity="center_horizontal"
-            android:text="文稿校对"
-            android:textSize="30px"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_marginLeft="5px"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
+            android:layout_height="wrap_content"
+            android:text="文稿核对"
+            android:drawableTop="@drawable/edit"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+        <RadioButton
+            android:id="@+id/navigation_search"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:id="@+id/search"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:text="笔录查询"
-            android:textSize="30px"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_marginLeft="5px"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
+            android:drawableTop="@drawable/search"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+        <RadioButton
+            android:id="@+id/navigation_print"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:id="@+id/paint"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:text="排版打印"
-            android:textSize="30px"
-            android:layout_weight="1"
-            />
-        <Button
-            android:layout_marginLeft="5px"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
+            android:drawableTop="@drawable/print"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+        <RadioButton
+            android:id="@+id/navigation_manage"
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:id="@+id/manage"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:text="版面管理"
-            android:textSize="30px"
-            android:layout_weight="1"
-            />
-
-        <Button
-            android:layout_marginLeft="5px"
-            android:background="@drawable/button_selector"
-            android:textColor="@drawable/text_color_selector"
-            android:id="@+id/system"
-            android:layout_width="170dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/manage"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+        <RadioButton
+            android:id="@+id/navigation_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="系统设置"
-            android:textSize="30px"
-            android:layout_weight="1"
-            />
+            android:drawableTop="@drawable/setting"
+            style="@style/RadioGroupButtonStyle"
+            android:background="?android:attr/selectableItemBackground"/>
+    </RadioGroup>
     </LinearLayout>
 
-
-
-
-
-
-</LinearLayout>

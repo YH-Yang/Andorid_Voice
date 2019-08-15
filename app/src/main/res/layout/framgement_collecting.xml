@@ -21,13 +21,25 @@
                 android:layout_height="match_parent"
 
                 >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="100dp"
+                <com.yyh.utils.AutoFitTextureView
+                    android:id="@+id/texture_front"
+                    android:layout_gravity="top|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--计时器-->
+                <Chronometer
+                    android:id="@+id/recordTime"
                     android:layout_gravity="center"
-                    android:text="摄像"
-                    />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.yyh.utils.AutoFitTextureView
+                    android:id="@+id/texture_back"
+                    android:layout_gravity="bottom|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
             </FrameLayout>
 
         </LinearLayout>
@@ -117,8 +129,16 @@
 
                     android:text="结束"
                     android:textSize="20sp"/>
+                <Button
+                    android:id="@+id/record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="开始录制"
+                    android:textSize="20sp"/>
 
-           <LinearLayout
+
+                <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"

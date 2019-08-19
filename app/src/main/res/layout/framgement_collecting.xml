@@ -86,12 +86,12 @@
                android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:scrollbars="horizontal"
+               android:scrollbarStyle="insideInset"
                android:fadingEdge="horizontal"
                >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@drawable/border"
                 >
                 <Button
@@ -100,7 +100,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="问"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    />
                 <ImageView
                     android:layout_gravity="bottom"
                     android:layout_width="wrap_content"

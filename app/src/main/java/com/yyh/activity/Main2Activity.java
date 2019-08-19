@@ -23,7 +23,9 @@ import com.yyh.fragement.Fix_fragement;
 import com.yyh.fragement.Setting_fragement;
 import com.yyh.fragement.collecting_fragement;
 import com.yyh.fragement.left_menu_fragement;
+import com.yyh.fragement.print_fragement;
 import com.yyh.fragement.templateFragment;
+import com.yyh.fragement.search_fragement;
 import com.yyh.fragement.voice_collect_fragement;
 import com.yyh.fragement.voice_verify_fragement;
 import com.yyh.utils.BaseActivity;
@@ -39,7 +41,9 @@ public class Main2Activity extends SlidingFragmentActivity {
    private collecting_fragement collecting_fragement;
    private Setting_fragement setting_fragement;
    private Fix_fragement fix_fragement;
-private  templateFragment templateFragment;
+   private search_fragement search_fragement;
+   private  templateFragment templateFragment;
+   private print_fragement print_fragement;
 
     @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +63,8 @@ private  templateFragment templateFragment;
         collecting_fragement=new collecting_fragement();
         fix_fragement=new Fix_fragement();
         templateFragment= new templateFragment();
+        search_fragement=new search_fragement();
+        print_fragement=new print_fragement();
         //首先让fragement显示的界面
         defaultfragment(setting_fragement);
         //得到传入的账号信息
@@ -91,11 +97,11 @@ private  templateFragment templateFragment;
                         break;
 
                     case R.id.navigation_search:
-                        switchfragment(setting_fragement);
+                        switchfragment(search_fragement);
                         break;
 
                     case R.id.navigation_print:
-                        switchfragment(setting_fragement);
+                        switchfragment(print_fragement);
                         break;
 
                     case R.id.navigation_manage:

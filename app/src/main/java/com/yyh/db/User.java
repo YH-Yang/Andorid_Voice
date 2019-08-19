@@ -89,6 +89,11 @@ public class User extends LitePalSupport {
         return User_apart_code;
     }
 
+    public boolean getUser_isadmin(){return  User_isadmin;}
+
+    public String getUser_apartment() {
+        return User_apartment;
+    }
 
     /*
         (外键) 根据外键数据库中是否有一样部门编号判断能否设置
@@ -115,17 +120,12 @@ public class User extends LitePalSupport {
         User_organ = user_organ;
     }
 
-    public String getUser_apartment() {
-        return User_apartment;
-    }
+
 
     public void setUser_apartment(String user_apartment) {
         User_apartment = user_apartment;
     }
 
-    public boolean isUser_isadmin() {
-        return User_isadmin;
-    }
 
     public void setUser_isadmin(boolean user_isadmin) {
         User_isadmin = user_isadmin;

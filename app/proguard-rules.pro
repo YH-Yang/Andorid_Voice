@@ -1,6 +1,6 @@
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
+# proguardFiles setting_n in build.gradle.
 # keep class com.iflytek.**{*;}
 # keepattributes Signature
 # For more details, see
